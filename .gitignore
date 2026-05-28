@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+lib/
+lib64/
+include/
+*.egg-info/
+*.egg
+
+# Data files (important for healthcare data)
+data/raw/*.csv
+data/raw/*.parquet
+data/processed/*.csv
+*.csv
+*.parquet
+
+# Model files
+*.pkl
+*.joblib
+*.model
+*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# AWS credentials
+.aws/
