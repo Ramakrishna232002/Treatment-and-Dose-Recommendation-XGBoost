@@ -61,27 +61,27 @@ This **Clinical Decision Support System (CDSS)** provides real-time treatment an
 ---
 
 ## 🏗️ Solution Architecture
-# PHASE 1: DATA
+## PHASE 1: DATA
 
 - [MIMIC-IV EHR] ──► [Data Extraction] ──► [Preprocessing] ──► [Feature Engineering] (Patients, Labs, (Clean, Handle
   (BMI, Interactions      Vitals, Diagnosis) Missing Data) Age Groups)
 
-# PHASE 2: MODEL
+## PHASE 2: MODEL
 
 - [Features] ──► [XGBoost Training] ──► [Model Evaluation] ──► [SHAP Integration] [Treatment] [Dosage Range] [Top 3 Factors]
   (Classification) (Regression) (Interpretability)
 
-# PHASE 3: DEPLOYMENT
+## PHASE 3: DEPLOYMENT
 
 - [GitHub] ──► [GitHub Actions] ──► [Docker Build] ──► [AWS ECR] ──► [AWS EC2] [FastAPI Server] (REST Endpoints)
 
-# PHASE 4: USER INTERFACE
+## PHASE 4: USER INTERFACE
 
 - [Doctor Input] ──► [Web Dashboard] ──► [API Call] ──► [Recommendation] 
 - [Treatment + Dosage Range + SHAP]
 - [Doctor Reviews & Decides] (Accept / Override / Modify)
 
-# PHASE 5: MONITORING
+## PHASE 5: MONITORING
 
 - [API Logs] ──► [CloudWatch] ──► [Drift Detection] ──► [Alerts] ──► [Retraining]
 
